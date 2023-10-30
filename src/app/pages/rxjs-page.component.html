@@ -1,0 +1,14 @@
+<h1>rxjs exemplos</h1>
+
+<p>observable</p>
+<button (click)="unsubscribe()">unsubscribe</button>
+<ul>
+<li *ngFor="let item of items">{{ item }}</li>
+</ul>
+
+<p>Subject</p>
+<button (click)="emitirEvento()">Emitir evento</button>
+
+<div>
+    Ultimo evento: {{ ultimoEvento }}
+</div>

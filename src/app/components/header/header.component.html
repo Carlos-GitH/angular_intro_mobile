@@ -1,0 +1,12 @@
+<button mat-button [matMenuTriggerFor]="mainMenu" class= "menuHeader">Menu</button>
+<button mat-button [matMenuTriggerFor]="cadastros" class= "menuHeader">Cadastros</button>
+<mat-menu #mainMenu>
+    <button class="menuHeaderButton" mat-menu-item color="primary">Pessoas</button>
+    <button class="menuHeaderButton" mat-menu-item color="primary">Alunos</button>
+    <button class="menuHeaderButton" mat-menu-item color="primary">Professores</button>
+</mat-menu>
+<mat-menu #cadastros>
+    <button class="menuHeaderButton" mat-menu-item color="primary">Usuários</button>
+    <button class="menuHeaderButton" mat-menu-item color="primary" [routerLink]="['cadastro/pessoa']">Pessoas</button>
+    <button class="menuHeaderButton" mat-menu-item color="primary">Funcionários</button>
+</mat-menu>
